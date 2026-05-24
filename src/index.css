@@ -1,0 +1,138 @@
+@import "tailwindcss";
+
+/* ── Base ─────────────────────────────────────────────────────────────── */
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overscroll-behavior: none;
+}
+
+/* ── Scrollbar ────────────────────────────────────────────────────────── */
+.scrollbar-thin {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255,255,255,0.06) transparent;
+}
+.scrollbar-thin::-webkit-scrollbar { width: 4px; }
+.scrollbar-thin::-webkit-scrollbar-track { background: transparent; }
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background-color: rgba(255,255,255,0.06);
+  border-radius: 99px;
+}
+
+/* ── Toggle switch ────────────────────────────────────────────────────── */
+input[type="checkbox"].sr-only ~ div > div {
+  transition: transform 150ms cubic-bezier(.4,0,.2,1);
+}
+
+/* ── Animations ───────────────────────────────────────────────────────── */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes pulse-soft {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: .5; }
+}
+
+.animate-fade-in { animation: fadeIn .3s ease-out; }
+.animate-slide-up { animation: slideUp .35s ease-out; }
+.animate-pulse-soft { animation: pulse-soft 2s ease-in-out infinite; }
+
+/* ── Glass effect ─────────────────────────────────────────────────────── */
+.glass {
+  background: rgba(255,255,255,.7);
+  backdrop-filter: blur(20px) saturate(1.4);
+  -webkit-backdrop-filter: blur(20px) saturate(1.4);
+}
+[data-theme="dark"] .glass {
+  background: rgba(17,24,39,.75);
+  backdrop-filter: blur(20px) saturate(1.2);
+  -webkit-backdrop-filter: blur(20px) saturate(1.2);
+}
+
+/* ── Semantic theme: LIGHT ────────────────────────────────────────────── */
+.bg-main        { background-color: #F0F2F5; }
+.bg-card        { background-color: #ffffff; }
+.bg-hover       { background-color: #f8fafc; }
+.bg-line        { background-color: #e2e8f0; }
+.border-line    { border-color: #e2e8f0; }
+.text-primary   { color: #0f172a; }
+.text-secondary { color: #64748b; }
+
+/* ── Semantic theme: DARK ─────────────────────────────────────────────── */
+[data-theme="dark"] { color-scheme: dark; }
+[data-theme="dark"] body { background-color: #0a0e17; }
+
+[data-theme="dark"] .bg-main        { background-color: #0a0e17; }
+[data-theme="dark"] .bg-card        { background-color: #111827; }
+[data-theme="dark"] .bg-hover       { background-color: #1a2233; }
+[data-theme="dark"] .bg-line        { background-color: #1e293b; }
+[data-theme="dark"] .border-line    { border-color: #1e293b; }
+[data-theme="dark"] .text-primary   { color: #f1f5f9; }
+[data-theme="dark"] .text-secondary { color: #94a3b8; }
+
+/* Tailwind utility overrides for dark mode */
+[data-theme="dark"] .text-slate-900 { color: #f1f5f9; }
+[data-theme="dark"] .text-slate-800 { color: #e2e8f0; }
+[data-theme="dark"] .text-slate-700 { color: #cbd5e1; }
+[data-theme="dark"] .text-slate-600 { color: #94a3b8; }
+[data-theme="dark"] .text-slate-500 { color: #94a3b8; }
+[data-theme="dark"] .text-slate-400 { color: #64748b; }
+[data-theme="dark"] .bg-white       { background-color: #111827; }
+[data-theme="dark"] .bg-slate-50    { background-color: #1a2233; }
+[data-theme="dark"] .bg-slate-100   { background-color: #1a2233; }
+[data-theme="dark"] .border-slate-200 { border-color: #1e293b; }
+[data-theme="dark"] .border-slate-100 { border-color: #1a2233; }
+[data-theme="dark"] .divide-slate-100 > :not([hidden]) ~ :not([hidden]) { border-color: #1a2233; }
+
+/* Accent colors dark */
+[data-theme="dark"] .bg-indigo-50      { background-color: rgba(99,102,241,.1); }
+[data-theme="dark"] .border-indigo-100 { border-color: rgba(99,102,241,.2); }
+[data-theme="dark"] .text-indigo-600   { color: #818cf8; }
+[data-theme="dark"] .text-indigo-800   { color: #a5b4fc; }
+[data-theme="dark"] .bg-emerald-50     { background-color: rgba(16,185,129,.1); }
+[data-theme="dark"] .border-emerald-100 { border-color: rgba(16,185,129,.15); }
+[data-theme="dark"] .border-emerald-200 { border-color: rgba(16,185,129,.2); }
+[data-theme="dark"] .text-emerald-600  { color: #34d399; }
+[data-theme="dark"] .bg-violet-50      { background-color: rgba(139,92,246,.1); }
+[data-theme="dark"] .border-violet-100 { border-color: rgba(139,92,246,.15); }
+[data-theme="dark"] .text-violet-600   { color: #a78bfa; }
+[data-theme="dark"] .bg-rose-50        { background-color: rgba(244,63,94,.08); }
+[data-theme="dark"] .border-rose-200   { border-color: rgba(244,63,94,.2); }
+[data-theme="dark"] .text-rose-600     { color: #fb7185; }
+[data-theme="dark"] .bg-amber-50       { background-color: rgba(245,158,11,.08); }
+[data-theme="dark"] .border-amber-200  { border-color: rgba(245,158,11,.2); }
+[data-theme="dark"] .text-amber-600    { color: #fbbf24; }
+
+/* Dark mode inputs */
+[data-theme="dark"] .placeholder\:text-slate-300::placeholder { color: #475569; }
+
+[data-theme="dark"] input:not([type="checkbox"]):not([type="radio"]),
+[data-theme="dark"] textarea {
+  background-color: #1a2233;
+  border-color: #1e293b;
+  color: #f1f5f9;
+}
+[data-theme="dark"] input:not([type="checkbox"]):not([type="radio"]):focus,
+[data-theme="dark"] textarea:focus {
+  border-color: #818cf8;
+}
+
+/* ── Bottom nav (mobile) ──────────────────────────────────────────────── */
+.bottom-nav {
+  padding-bottom: max(0.5rem, env(safe-area-inset-bottom));
+}
