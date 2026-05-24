@@ -1,0 +1,121 @@
+{
+  "bianca": {
+    "isActive": true,
+    "autoDetect": false,
+    "targetGroups": [
+      "-1001525948158"
+    ],
+    "responses": [
+      {
+        "keyword": "art",
+        "response": "(é.) ꨄ @lunoxy dan (t.me/lunoxy/1018) available ready yukkk\n   (t.me/lunoxy/972) bisa rush langsung aja kirim\n    formless hit @.bidadarie"
+      },
+      {
+        "keyword": "chibi art",
+        "response": "HIT @LUNOXY YUK! buat art ready (t.me/lunoxy/979) dan chibi (lunoxy-chibiart.carrd.co) 🪽spell masterpiece! available for rush langsung aja ke @.bidadarie ✶"
+      },
+      {
+        "keyword": "Art class",
+        "response": "@artcIass from 0 to 100! cocok buat pemula yang mau belajar. 🪽 tersedia banyak brush pack & sesi tanya jawab all the time. t.me/artcIass/733 yuk join! ♪˚"
+      },
+      {
+        "keyword": "Bulol things",
+        "response": "bulol animated-purposes go to @lunoxyne. dengan result secantik ini yuk ke @.mDemonic: fast respon & proses. (t.me/xynearchive/2) ☁️🐩"
+      },
+      {
+        "keyword": "Mensive things",
+        "response": "yuk jajan, @lunoxyne caught up. \nboleh langsung (t.me/xynearchive/2)\ncustom di (t.me/xynearchive/2) ✶ available formless! kirim format ke @.mDemonic. 🎹✨"
+      }
+    ],
+    "antiSpamDelay": 5000,
+    "requireEmojiPrefix": true,
+    "filterWords": [],
+    "filterWordsEnabled": false,
+    "allowedSenders": [
+      "wtb"
+    ],
+    "allowedSendersEnabled": false
+  },
+  "acc3": {
+    "isActive": false,
+    "autoDetect": false,
+    "targetGroups": [
+      "-1001525948158",
+      "-1001611324665"
+    ],
+    "responses": [
+      {
+        "keyword": "Art",
+        "response": "(é.) ꨄ @lunoxy dan (t.me/lunoxy/1018) available ready yukkk\n   (t.me/lunoxy/972) bisa rush langsung aja kirim\n    formless hit @.bidadarie"
+      },
+      {
+        "keyword": "Chibi art",
+        "response": "HIT @LUNOXY YUK! buat art ready (t.me/lunoxy/979) dan chibi (lunoxy-chibiart.carrd.co) 🪽spell masterpiece! available for rush langsung aja ke @.bidadarie ✶"
+      },
+      {
+        "keyword": "Art class",
+        "response": "@artcIass from 0 to 100! cocok buat pemula yang mau belajar. 🪽 tersedia banyak brush pack & sesi tanya jawab all the time. t.me/artcIass/733 yuk join! ♪˚"
+      },
+      {
+        "keyword": "Bulol things",
+        "response": "bulol animated-purposes go to @lunoxyne. dengan result secantik ini yuk ke @.mDemonic: fast respon & proses. (t.me/xynearchive/2) ☁️🐩"
+      },
+      {
+        "keyword": "Mensive things",
+        "response": "yuk jajan, @lunoxyne caught up. \nboleh langsung (t.me/xynearchive/2)\ncustom di (t.me/xynearchive/2) ✶ available formless! kirim format ke @.mDemonic. 🎹✨"
+      }
+    ],
+    "antiSpamDelay": 5000,
+    "requireEmojiPrefix": false,
+    "filterWords": [],
+    "filterWordsEnabled": false,
+    "allowedSenders": [],
+    "allowedSendersEnabled": false
+  },
+  "3gfes0fDRRf": {
+    "isActive": true,
+    "autoDetect": false,
+    "targetGroups": [
+      "-1001611324665",
+      "-1003846100803"
+    ],
+    "responses": [
+      {
+        "keyword": "netflix",
+        "response": "a"
+      }
+    ],
+    "antiSpamDelay": 1500,
+    "requireEmojiPrefix": true,
+    "filterWords": [],
+    "filterWordsEnabled": false,
+    "allowedSenders": [
+      "hia",
+      "kip"
+    ],
+    "allowedSendersEnabled": true
+  },
+  "+6285725711516": {
+    "isActive": true,
+    "autoDetect": false,
+    "targetGroups": [
+      "-1001611324665",
+      "-1003846100803"
+    ],
+    "responses": [
+      {
+        "keyword": "netflix",
+        "response": "a"
+      }
+    ],
+    "antiSpamDelay": 1500,
+    "requireEmojiPrefix": true,
+    "filterWords": [],
+    "filterWordsEnabled": true,
+    "allowedSenders": [
+      "kip",
+      "hia"
+    ],
+    "allowedSendersEnabled": true
+  }
+}

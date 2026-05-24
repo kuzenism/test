@@ -1,0 +1,6 @@
+{
+  "name": "TeleOffer Userbot",
+  "description": "Userbot Telegram untuk monitoring otomatis grup jual beli (base). Memantau kata kunci seperti 'wtb nokos' dan mengirimkan promosi secara otomatis.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
